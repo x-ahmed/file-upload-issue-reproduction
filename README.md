@@ -1,5 +1,7 @@
 ## Installation Steps
 
+- `git clone git@github.com:x-ahmed/file-upload-issue-reproduction.git`
+
 - `docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
