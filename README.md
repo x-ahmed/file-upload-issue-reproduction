@@ -50,4 +50,4 @@ docker run --rm \
 
 5. In the actual behavior, the filament file upload would store the reverted image name in DB whereas the custom file upload that sets the state to null when the image is reverted would have a NULL value stored in DB.
 
-6. You might also check the Debug bar for both the printed info of the regular Filament FileUpload and the custom FileUpload be the record is created in DB.
+6. You might also check the Debug bar for both the printed info of the regular Filament FileUpload and the custom FileUpload before the record is created in DB.
