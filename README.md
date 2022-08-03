@@ -1,27 +1,41 @@
 ## Installation Steps
 
-- `git clone git@github.com:x-ahmed/file-upload-issue-reproduction.git`
+```
+git clone git@github.com:x-ahmed/file-upload-issue-reproduction.git
+```
 
-- ```
-    docker run --rm \
+```
+copy .env.example to .env (replace .env values if needed)
+```
+
+```
+docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
     -w /var/www/html \
     laravelsail/php81-composer:latest \
     composer install --ignore-platform-reqs
-  ```
+```
+ 
+```
+./vendor/bin/sail up
+```
 
-- copy `.env.example` to `.env` ***(replace .env values if needed)***
+```
+./vendor/bin/sail artisan key:generate
+```
 
-- `./vendor/bin/sail up`
+```
+./vendor/bin/sail artisan migrate
+```
 
-- `./vendor/bin/sail artisan key:generate`
+```
+./vendor/bin/sail artisan make:filament-user
+```
 
-- `./vendor/bin/sail artisan migrate`
-
-- `./vendor/bin/sail artisan make:filament-user`
-
-- `./vendor/bin/sail artisan storage:link`
+```
+./vendor/bin/sail artisan storage:link
+```
 
 
 ### Steps to reproduce the bug
