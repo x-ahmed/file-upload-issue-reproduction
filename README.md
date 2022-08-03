@@ -5,7 +5,7 @@ git clone git@github.com:x-ahmed/file-upload-issue-reproduction.git
 ```
 
 ```
-copy .env.example to .env (replace .env values if needed)
+cp .env.example .env 
 ```
 
 ```
