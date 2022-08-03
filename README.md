@@ -2,12 +2,14 @@
 
 - `git clone git@github.com:x-ahmed/file-upload-issue-reproduction.git`
 
-- `docker run --rm \
+- ```
+    docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
     -w /var/www/html \
     laravelsail/php81-composer:latest \
-    composer install --ignore-platform-reqs`
+    composer install --ignore-platform-reqs
+  ```
 
 - copy `.env.example` to `.env` ***(replace .env values if needed)***
 
